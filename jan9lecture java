@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package jan9lecture;
+
+/**
+ *
+ * @author s0557363
+ */
+public class Jan9lecture {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //declaring a destination array
+        char[] copyFrom = {'d','e','c','a','f', 'f', 'e', 'i','n','a','t','a','d'};
+        
+        //declaring a destination array 
+        char[] copyTo = new char[7];
+        //copying array using System.arrayCopy() method
+        System.arraycopy(copyFrom, 2,copyTo,0,7);
+        //printing the destination array
+        System.out.println(String.valueOf(copyTo));
+    }
+    
+}
